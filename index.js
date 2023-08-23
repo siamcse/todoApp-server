@@ -60,7 +60,6 @@ async function run() {
             }
             const result = await todosCollection.updateOne(filter, updateDoc);
             res.send(result);
-            console.log(result)
 
         })
 
@@ -75,7 +74,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send("Hello World");
+    res.send("Welcome to todoApp server!");
 })
 
 app.listen(port, () => {
